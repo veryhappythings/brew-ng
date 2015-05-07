@@ -1,0 +1,16 @@
+{
+  "name": "brewcalc",
+  "version": "1.0.0",
+  "description": "Brewing calculations",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mac Chapman",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.7.1",
+    "gulp": "^3.8.11",
+    "gulp-less": "^3.0.3",
+    "main-bower-files": "^2.7.0"
+  }
+}
