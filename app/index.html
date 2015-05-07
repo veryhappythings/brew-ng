@@ -1,19 +1,19 @@
 <!DOCTYPE HTML>
-<html lang="en" ng-app="brewcalcApp">
+<html lang="en" ng-app="brewngApp">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <script src="js/lib/angular.js"></script>
-    <script src="js/brewcalc.js"></script>
+    <script src="js/brewng.js"></script>
 
     <link href='css/screen.css' rel='stylesheet' type='text/css' />
 
-    <title>BrewCalc</title>
+    <title>Brew-NG</title>
   </head>
 
-  <body ng-controller="BrewcalcCtrl">
+  <body ng-controller="BrewngCtrl">
     <p>OG: <input ng-model="og" /></p>
     <p>FG: <input ng-model="fg" /></p>
     <p>Complex ABV: {{ toFixed((1.05 / 0.79) * ((parseFloat(og) - parseFloat(fg)) / parseFloat(fg)) * 100, 2) + "%" }}</p>

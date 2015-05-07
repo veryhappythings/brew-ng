@@ -1,6 +1,6 @@
-var brewcalcApp = angular.module('brewcalcApp', []);
+var brewngApp = angular.module('brewngApp', []);
 
-brewcalcApp.controller('BrewcalcCtrl', function ($scope) {
+brewngApp.controller('BrewngCtrl', function ($scope) {
   $scope.parseFloat = function(value) {
     return parseFloat(value);
   }
