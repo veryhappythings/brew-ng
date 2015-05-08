@@ -18,6 +18,6 @@
     <p>FG: <input ng-model="fg" /></p>
     <p>Complex ABV: {{ toFixed((1.05 / 0.79) * ((parseFloat(og) - parseFloat(fg)) / parseFloat(fg)) * 100, 2) + "%" }}</p>
     <p>Simple  ABV: {{ toFixed(131.25 * (parseFloat(og) - parseFloat(fg)), 2) + "%" }}</p>
-    <p>Apparent Attentuation: {{ toFixed(100 * (parseFloat(og) - parseFloat(fg)) / (parseFloat(og) - 1), 2) + "%" }}</p>
+    <p>Apparent Attenuation: {{ toFixed(100 * (parseFloat(og) - parseFloat(fg)) / (parseFloat(og) - 1), 2) + "%" }}</p>
   </body>
 </html>
