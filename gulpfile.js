@@ -4,7 +4,7 @@ var mainBowerFiles = require('main-bower-files');
 var browserSync = require('browser-sync');
 
 paths = {
-  app: ['./app/*.html', './app/js/*.js'],
+  app: ['./app/**/*.html', './app/js/*.js'],
   less: './app/less/*.less',
   bower: './bower_components'
 };
