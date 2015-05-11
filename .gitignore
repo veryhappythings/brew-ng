@@ -7,5 +7,5 @@ Session.vim
 
 bower_components
 node_modules
-app/js/lib
 app/css
+app/bower_components

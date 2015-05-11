@@ -10,8 +10,8 @@ paths = {
 };
 
 gulp.task('bower', function() {
-    return gulp.src(mainBowerFiles({filter: 'js$'}))
-        .pipe(gulp.dest('./app/js/lib/'))
+    return gulp.src(mainBowerFiles())
+        .pipe(gulp.dest('app/bower_components'))
 });
 
 gulp.task('bower-watch', ['bower'], browserSync.reload);
