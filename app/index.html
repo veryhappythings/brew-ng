@@ -6,18 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <script src="bower_components/angular.js"></script>
-    <script src="js/brewng.js"></script>
+    <script src="bower_components/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
 
     <link href='css/screen.css' rel='stylesheet' type='text/css' />
 
     <title>Brew-NG</title>
   </head>
 
-  <body ng-controller="BrewngCtrl">
-    <p>OG: <input ng-model="og" /></p>
-    <p>FG: <input ng-model="fg" /></p>
-    <p>Complex ABV: {{ toFixed((1.05 / 0.79) * ((parseFloat(og) - parseFloat(fg)) / parseFloat(fg)) * 100, 2) + "%" }}</p>
-    <p>Simple  ABV: {{ toFixed(131.25 * (parseFloat(og) - parseFloat(fg)), 2) + "%" }}</p>
-    <p>Apparent Attenuation: {{ toFixed(100 * (parseFloat(og) - parseFloat(fg)) / (parseFloat(og) - 1), 2) + "%" }}</p>
+  <body>
+
+    <div ng-view></div>
   </body>
 </html>

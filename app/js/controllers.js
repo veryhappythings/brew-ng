@@ -1,6 +1,6 @@
-var brewngApp = angular.module('brewngApp', []);
+var brewngControllers = angular.module('brewngControllers', []);
 
-brewngApp.controller('BrewngCtrl', function ($scope) {
+brewngControllers.controller('AbvController', ['$scope', function ($scope) {
   $scope.parseFloat = function(value) {
     return parseFloat(value);
   }
@@ -9,5 +9,5 @@ brewngApp.controller('BrewngCtrl', function ($scope) {
   }
   $scope.og = "1.065";
   $scope.fg = "1.017";
-});
+}]);
 
