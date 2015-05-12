@@ -5,21 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+    <script src="bower_components/jquery.js"></script>
     <script src="bower_components/angular.js"></script>
     <script src="bower_components/angular-route.js"></script>
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
+    <script src="semantic/semantic.js"></script>
 
-    <link href='css/screen.css' rel='stylesheet' type='text/css' />
+    <link href='semantic/semantic.css' rel='stylesheet' type='text/css' />
 
     <title>Brew-NG</title>
   </head>
 
   <body>
-    <ul>
-      <li><a href="/#/abv">ABV</a></li>
-      <li><a href="/#/priming">Priming Sugar</a></li>
+    <ul class="ui top attached tabular menu" ng-controller="navigation">
+      <li ng-class="{active:tab('AbvController')}" class="item"><a href="/#/abv">ABV</a></li>
+      <li ng-class="{active:tab('PrimingController')}" class="item"><a href="/#/priming">Priming Sugar</a></li>
     </ul>
-    <div ng-view></div>
+    <div class="ui bottom attached active tab segment" ng-view></div>
   </body>
 </html>

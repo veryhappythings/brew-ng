@@ -1,5 +1,11 @@
 var brewngControllers = angular.module('brewngControllers', []);
 
+brewngControllers.controller('navigation', ['$scope', '$route', function($scope, $route) {
+  $scope.tab = function(route) {
+    return $route.current && route === $route.current.controller;
+  };
+}]);
+
 brewngControllers.controller('AbvController', ['$scope', function ($scope) {
   $scope.parseFloat = function(value) {
     return parseFloat(value);
