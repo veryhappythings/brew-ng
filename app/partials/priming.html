@@ -3,6 +3,6 @@
 <p>Temperature of beer (degrees centigrade): <input ng-model="temperature_c" /></p>
 <p>Temperature of beer (degrees fahrenheit): {{fahrenheit(temperature_c)}}</p>
 <p>CO2 currently in beer: {{currentVolume()}}</p>
-<p>Table sugar:</p>
-<p>Corn sugar:</p>
-<p>DME:</p>
+<p>Table sugar: {{pureGlucose()}}</p>
+<p>Corn sugar: {{pureGlucose() * 1.09}}</p>
+<p>DME: {{pureGlucose() * 1.32}}</p>
