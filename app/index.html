@@ -18,10 +18,14 @@
   </head>
 
   <body>
-    <ul class="ui top attached tabular menu" ng-controller="navigation">
-      <li ng-class="{active:tab('AbvController')}" class="item"><a href="/#/abv">ABV</a></li>
-      <li ng-class="{active:tab('PrimingController')}" class="item"><a href="/#/priming">Priming Sugar</a></li>
-    </ul>
-    <div class="ui bottom attached active tab segment" ng-view></div>
+    <div class="ui centered grid">
+      <div class="fourteen wide column">
+        <ul class="ui top attached tabular menu" ng-controller="navigation">
+          <li ng-class="{active:tab('AbvController')}" class="item"><a href="/#/abv">ABV</a></li>
+          <li ng-class="{active:tab('PrimingController')}" class="item"><a href="/#/priming">Priming Sugar</a></li>
+        </ul>
+        <div class="ui bottom attached active tab segment" ng-view></div>
+      </div>
+    </div>
   </body>
 </html>
