@@ -15,3 +15,9 @@ brewngApp.config(['$routeProvider',
         redirectTo: '/abv'
       });
 }]);
+
+brewngApp.factory('displayValue', function() {
+  return function(value, precision) {
+    return value.toFixed(precision);
+  };
+});

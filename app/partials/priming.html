@@ -1,8 +1,8 @@
 <p>Quantity (litres): <input ng-model="quantity" /></p>
 <p>Volumes of CO2: <input ng-model="co2" /></p>
 <p>Temperature of beer (degrees centigrade): <input ng-model="temperature_c" /></p>
-<p>Temperature of beer (degrees fahrenheit): {{fahrenheit(temperature_c)}}</p>
-<p>CO2 currently in beer: {{currentVolume()}}</p>
-<p>Table sugar: {{pureGlucose()}}</p>
-<p>Corn sugar: {{pureGlucose() * 1.09}}</p>
-<p>DME: {{pureGlucose() * 1.32}}</p>
+<p>Temperature of beer (degrees fahrenheit): {{displayValue(fahrenheit(temperature_c), 2)}}</p>
+<p>CO2 currently in beer: {{displayValue(currentVolume(), 2)}}</p>
+<p>Table sugar: {{displayValue(pureGlucose(), 2)}}</p>
+<p>Corn sugar: {{displayValue(pureGlucose() * 1.09, 2)}}</p>
+<p>DME: {{displayValue(pureGlucose() * 1.32, 2)}}</p>
