@@ -1,5 +1,20 @@
-<p>OG: <input ng-model="og" /></p>
-<p>FG: <input ng-model="fg" /></p>
+<div class="ui centered grid">
+  <div class="seven wide column">
+    <p>OG: {{ og }}</p>
+    <p>FG: {{ fg }}</p>
+  </div>
+  <div class="seven wide column">
+    <div>
+      <label for="og">OG:</label>
+      <input ng-model="og" type="range" name="og" id="og" value="1.05" min="0" max="2" step="0.001"/>
+    </div>
+    <div>
+      <label for="fg">FG:</label>
+      <input ng-model="fg" type="range" name="fg" id="fg" value="1.05" min="0" max="2" step="0.001"/>
+    </div>
+  </div>
+</div>
+
 <p>Complex ABV: {{ displayValue(complex(), 2) + "%" }}</p>
 <p>Simple  ABV: {{ displayValue(simple(), 2) + "%" }}</p>
 <p>Apparent Attenuation: {{ displayValue(100 * (parseFloat(og) - parseFloat(fg)) / (parseFloat(og) - 1), 2) + "%" }}</p>

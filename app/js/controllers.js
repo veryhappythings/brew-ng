@@ -21,8 +21,8 @@ brewngControllers.controller('AbvController', ['$scope', 'displayValue', functio
     return 131.25 * (parseFloat($scope.og) - parseFloat($scope.fg));
   };
 
-  $scope.og = "1.065";
-  $scope.fg = "1.017";
+  $scope.og = 1.065;
+  $scope.fg = 1.017;
 }]);
 
 brewngControllers.controller('PrimingController', ['$scope', 'displayValue', function ($scope, displayValue) {
